@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Contacto</title>
+</head>
+<body>
+    
+    <header id="inicio">
+        <div class="logo">
+          <img
+            src="../assets/logo_heladeria.png"
+            alt="logo"
+            class="cabecera__logo"
+          />
+          <h1 class="cabecera__titulo">Heladeria</h1>
+        </div>
+
+        <button class="botonMenu">
+          <i class="fa fa-bars"></i>
+        </button>
+  
+        <nav class="cabecera__menu">
+          <ul class="cabecera__menu__lista">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="sucursales.html">Sucursales</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+    <hr>
+
+    <form action="">
+        <Fieldset> <!--Recuadro-->
+            <legend>Info personal</legend> <!--Titulo-->
+            <div>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" placeholder="Jose"> 
+            </div>
+            <br>
+
+            <div>
+                <label for="apellido">Apellido: </label>
+                <input type="text" name="apellido" placeholder="Perez"> 
+            </div>
+            <br>
+        
+            <div>
+                <label for="domicilio">Domicilio: </label>
+                <input type="text" name="domicilio" placeholder="Calle Falsa 123"> 
+            </div>
+            <br>
+
+            <div>
+                <label for="mail">Mail: </label>
+                <input type="mail" name="mail" placeholder="algo@algo.com"> 
+            </div>
+            <br>
+    
+            <div>
+                <label for="comentarios">Comentarios adicionales </label> <br>
+                <textarea name="comentarios" id="" cols="50" rows="15"></textarea> 
+            </div>
+            <br>
+    
+            <div>
+                <label for="">Sexo:</label>
+                <select name="Sexo" id="">
+                    <option value="H">Hombre</option>
+                    <option value="M">Mujer</option>
+                    <option value="NB">Prefiero no decirlo</option>
+                </select> 
+            </div>
+            <br>
+
+            </div>
+            <p>¿En que estacion del año comes más helado?</p>
+                <div>Verano
+                    <input type="radio" name="verano" value="Verano">
+                </div>
+                <div>Invierno
+                    <input type="radio" name="invierno" value="Invierno">
+                </div>
+            </div>
+            <br>
+
+
+            <div>¿Queres recibir info sobre nosotros?
+				<input type="checkbox" name="acepta" value="1">
+            </div>
+            <br>
+
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar formulario">
+            </div>
+        </Fieldset>
+        <hr>
+    
+
+        <footer class="pie">
+            <div class="logo">
+              <img src="../assets/logo_heladeria.png" alt="logo" class="pie__img" />
+              <h1 class="pie__titulo">Heladeria</h1>
+            </div>
+      
+            <div class="pie__redes">
+              <img src="../assets/facebook.png" alt="facebook" class="imgRedes" />
+              <img src="../assets/instagram.png" alt="instagram" class="imgRedes" />
+              <img src="../assets/whatsapp.png" alt="wspp" class="imgRedes" />
+            </div>
+      
+            <nav class="pie__menu">
+              <ul class="pie__menu__lista">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+            </nav>
+          </footer>
+      
+          <div class="pie__secundario">
+            <div class="pie__suscripcion">
+              <span>Suscribite a nuestro Newsletter</span>
+              <input type="mail" placeholder="E-MAIL" />
+              <button type="submit">Enviar</button>
+            </div>
+            Pie de pagina - &copy;2021 desarrollado por: Matias Aguirre
+          </div>
+</body>
+</html>
