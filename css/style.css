@@ -1,3 +1,71 @@
-header {
- 
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+
+
+body {
+    overflow-x: hidden;
+    background-color: #fffff4;
   }
+
+.tituloMain {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 5px 10px 5px;
+}
+
+.titulos {
+    font-family: "Anton", sans-serif;
+    font-size: xx-large;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+#comentarios{
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+blockquote {
+    font-family: 'Special Elite', cursive;
+	background: #fffdf5;
+	color: #3f3f5a;
+	font-weight: 100;
+	font-size: 2rem;
+	max-width: 600px;
+	line-height: 1.4;
+	position: relative;
+	margin: 0;
+	padding: .5rem;
+}
+
+blockquote:before,
+blockquote:after {
+	position: absolute;
+	color: #f1efe6;
+	font-size: 8rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+blockquote:before {
+	content: '“';
+	left: -5rem;
+	top: -2rem;
+}
+
+blockquote:after {
+	content: '”';
+	right: -5rem;
+	bottom: 1rem;
+}
+
+cite {
+	line-height: 3;
+	text-align: left;
+}

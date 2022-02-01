@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Heladeria</title>
@@ -11,10 +12,10 @@
 <body>
     
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-3 border-bottom border-primary" >
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html">
-          <img src="./assets/logo_heladeria.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          <img src="./assets/logo_heladeria.png" alt="" width="30" height="24" class="d-inline-block align-text-top ">
           Heladeria
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +48,93 @@
     </nav>
   </header>
 
+  <!-- INICIO CONTENIDO PRINCIPAL -->
+  <main>
+    <!-- INICIO SECCION PROMOCIONES -->
+    <section id="promos">
+      <div class="tituloMain">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-right-square-fill" viewBox="0 0 16 16">
+          <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z"/>
+        </svg>
+        <h2 class="titulos">Promociones vigentes</h2>
+      </div>
+     
+      <!-- INICIO SLIDE -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://pbs.twimg.com/media/EHfOGNrWoAILobC?format=jpg&name=large" class="d-block w-100" alt="promo_1">
+          </div>
+          <div class="carousel-item">
+            <img src="https://mandorlehelados.com.ar/wp-content/uploads/2021/11/mandorle-helados-promo-2.png" class="d-block w-100" alt="promo_2">
+          </div>
+          <div class="carousel-item">
+            <img src="https://pbs.twimg.com/media/D0hVqsHXgAAg0bt.jpg" class="d-block w-100" alt="promo_3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- FIN SLIDE -->
+    </section>
+    <!-- FIN SECCION PROMOCIONES -->
+
+    <!-- INICIO SECCION COMENTARIOS -->
+    <section id="comentarios">
+      <div class="tituloMain">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-right-square-fill" viewBox="0 0 16 16">
+          <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z"/>
+        </svg>
+        <h2 class="titulos">Comentarios de nuestros clientes</h2>
+      </div>
+      
+      <div class="conteiner">
+        <blockquote>The man who comes back through the door in the wall will never be quite the same as the man who went out.</blockquote>
+        <cite>Aldous Huxley</cite>
+      </div>
+      
+      <!-- <div id="comentarioCliente">
+        <article class="articulo">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+          dolores esse sapiente distinctio asperiores alias ullam quasi at.
+          Reiciendis ullam voluptatum, id magnam et aut voluptatem accusantium
+          neque exercitationem dolore! Officiis vel enim voluptas consequatur.
+          Tempore rem optio quod iure deserunt officia officiis velit mollitia
+          sit eum sapiente, doloremque quisquam rerum repudiandae laborum
+          ducimus pariatur. Deserunt ipsam quas hic saepe? Consequatur libero
+          doloremque, aspernatur odio cum, dolor amet quae iusto deserunt
+          aliquid pariatur voluptate laboriosam modi officiis sed? Voluptates
+          dolorem sunt nam eum culpa modi dolor consectetur perferendis
+          aspernatur sequi? Aspernatur temporibus sequi iste rem aperiam a id
+          dolor vero odio officia? Nostrum, incidunt ullam alias odio cum
+          asperiores excepturi, nobis inventore esse explicabo, dolores ipsum
+          illo debitis sed repudiandae! Saepe sint unde beatae quam molestias
+          quidem tenetur ex architecto, aut atque, eligendi quos modi. Cumque
+          voluptas, nulla hic doloremque esse expedita officiis voluptates
+          pariatur vel nisi, quaerat ratione dolore.
+        </article>
+        <img
+          src="./assets/estrellas_valoracion.png"
+          alt="valoracion"
+          class="img__comentarios animate__animated animate__pulse animate__infinite	infinite"
+        />
+      </div> -->
+    </section>
+    <!-- FIN SECCION COMENTARIOS -->
+  </main>
+  <!-- FIN CONTENIDO PRINCIPAL -->
     
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
