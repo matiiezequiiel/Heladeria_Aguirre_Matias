@@ -8,6 +8,11 @@ body {
     background-color: #fffff4;
 }
 
+#menu a{
+	font-size: large ;
+	font-weight: bold;
+	color: #3f3f3f;
+}
 
 .tituloMain {
     width: 100%;
@@ -81,6 +86,11 @@ cite {
     padding-left: 5px;
   }
 
+#pie a{
+	font-size: large ;
+	font-weight: bold;
+	color: #3f3f3f;
+}
  /* MOVIL */
 
 @media (max-width: 480px) {
