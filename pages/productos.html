@@ -23,10 +23,11 @@
       </symbol>
     </svg>
     
+    <!-- INICIO HEADER -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-white border-3 border-bottom border-primary" >
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">
+          <a class="navbar-brand" href="../index.html">
             <img src="../assets/logo_heladeria.png" alt="" width="30" height="24" class="d-inline-block align-text-top ">
             Heladeria
           </a>
@@ -59,46 +60,144 @@
         </div>
       </nav>
     </header>
+    <!-- FIN HEADER -->
+
+    <main>
+      <section>
+        <div class="tituloMain">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-right-square-fill" viewBox="0 0 16 16">
+            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z"/>
+          </svg>
+          <h2 class="titulos">Contamos con una amplia variedad de productos</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <div class="container mt-4">
+              <table class="table table-striped table-bordered table-hover fs-4">
+                <thead>
+                  <tr>
+                    <th>Tipo</th>
+                    <th>Sabores disponibles</th>
+                  </tr>
+                </thead>
+                
+                <tbody>
+                  <tr>
+                    <td>Torta helada</td>
+                    <td>Oreo y Milka</td>
+                  </tr>
+                  <tr>
+                    <td>Helados de agua</td>
+                    <td>Frutilla, naranja y uva</td>
+                  </tr>
+                  <tr>
+                    <td>Helados de crema</td>
+                    <td>Americana, DDL y chocolate</td>
+                  </tr>
+                  <tr>
+                    <td>Helados artesanales</td>
+                    <td>Tramontana, crema oreo, chocolate blanco, DDL granizado</td>
+                  </tr>
+                </tbody>  
+              </table>
+            </div>
+            
+          </div>
+
+          <div class="col-lg-6 col-12 pt-lg-5 p-4 " >
+            <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/g8W9Oyu0p5Q?start=0&end=15&autoplay=1&rel=0&modestbranding=1&rel=0&showinfo=0&controls=0&playlist=g8W9Oyu0p5Q&loop=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            ></iframe>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- INICIO FOOTER -->
+  <div class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6">
+          <h5>Secciones</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-muted">Inicio</a></li>
+            <li class="nav-item mb-2"><a href="productos.html" class="nav-link p-0 text-muted">Productos</a></li>
+            <li class="nav-item mb-2"><a href="nosotros.html" class="nav-link p-0 text-muted">Nosotros</a></li>
+            <li class="nav-item mb-2"><a href="sucursales.html" class="nav-link p-0 text-muted">Sucursales</a></li>
+            <li class="nav-item mb-2"><a href="contacto.html" class="nav-link p-0 text-muted">Contacto</a></li>
+          </ul>
+        </div>
+   
+        <div class="col-4 offset-1">
+          <form>
+            <h5>Suscribite a nuestro Newsletter</h5>
+            <p>Recibiras todas las novedades sobre nuestros productos.</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="E-MAIL">
+              <button class="btn btn-primary" type="button">SubscribIrse</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p>Pie de pagina - &copy;2021 desarrollado por: Matias Aguirre</p>
+        
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <!-- FIN FOOTER -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+
   </body>
 
 
 
   <!-- <body id="gridAreasProducto">
   
-    <main id="mainSecundario">
-      <section>
-        <div class="tituloMain">
-          <img
-            src="../assets/arrow_right_black_24dp.svg"
-            alt="flecha"
-            class="flechaTitulos"
-          />
-          <h2 class="titulos">Contamos con una amplia variedad de productos</h2>
-        </div>
-
         <div class="seccionProductos">
 
           <table border="1px">
-            <tr>
-              <th>Tipo</th>
-              <th>Sabores disponibles</th>
-            </tr>
-            <tr>
-              <td>Torta helada</td>
-              <td>Oreo y Milka</td>
-            </tr>
-            <tr>
-              <td>Helados de agua</td>
-              <td>Frutilla, naranja y uva</td>
-            </tr>
-            <tr>
-              <td>Helados de crema</td>
-              <td>Americana, DDL y chocolate</td>
-            </tr>
-            <tr>
-              <td>Helados artesanales</td>
-              <td>Tramontana, crema oreo, chocolate blanco, DDL granizado</td>
-            </tr>
+            <thead>
+              <tr>
+                <th>Tipo</th>
+                <th>Sabores disponibles</th>
+              </tr>
+            </thead>
+            
+            <tbody>
+              <tr>
+                <td>Torta helada</td>
+                <td>Oreo y Milka</td>
+              </tr>
+              <tr>
+                <td>Helados de agua</td>
+                <td>Frutilla, naranja y uva</td>
+              </tr>
+              <tr>
+                <td>Helados de crema</td>
+                <td>Americana, DDL y chocolate</td>
+              </tr>
+              <tr>
+                <td>Helados artesanales</td>
+                <td>Tramontana, crema oreo, chocolate blanco, DDL granizado</td>
+              </tr>
+            </tbody>  
           </table>
           
           <iframe

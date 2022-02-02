@@ -80,3 +80,30 @@ cite {
     display: flex;
     flex-direction: column;
   }
+
+ /* MOVIL */
+
+@media (max-width: 480px) {
+
+.comentarioCliente{
+    padding: 0px 10px 0px 10px;
+}
+
+blockquote {
+    font-size: 1.5rem;
+}
+
+blockquote:before {
+
+	left: -1rem;
+	top: -2rem;
+}
+
+blockquote:after {
+	content: '”';
+	right: 0rem;
+	bottom: 0rem;
+}
+
+   
+}
