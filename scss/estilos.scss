@@ -1,8 +1,10 @@
-// $gradiente: -webkit-linear-gradient(to left,#493240,#ff0099),linear-gradient(to left, #493240, #ff0099); 
+/* CAMBIO DE VARIABLES ORIGINALES DE BOOTSTRAP*/
 $colorCabecera: #ff0099; 
 $colorBotonPie: #493240; 
 $primary: $colorCabecera;
 $secondary: $colorBotonPie;
+$degradado: linear-gradient(to left,#493240,#ff0099),linear-gradient(to left,#493240,#ff0099); 
+/* FIN CAMBIO DE VARIABLES ORIGINALES DE BOOTSTRAP*/
 
 @import "../lib/Bootstrap/scss/bootstrap";
 
@@ -16,17 +18,15 @@ body {
     background-color: #fffff4;
 }
 
-// #cabecera{
-// 	position: -webkit-sticky;
-// 	position: sticky;
-// 	top: 0px;
-// 	z-index: 1;
+#cabecera{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	z-index: 1;
+}
 
-// }
-
-#menu{
-	height: 6rem;
-	
+#navbarSupportedContent{
+	z-index: 2;
 }
 
 
@@ -41,11 +41,6 @@ body {
 	border-radius: 10px;
 }
 
-#navbarSupportedContent{
-	z-index: 1;
-}
-
-
 .tituloMain {
     width: 100%;
     display: flex;
@@ -59,6 +54,11 @@ body {
     font-size: xx-large;
     padding-top: 5px;
     padding-left: 10px;
+	background-image: degradado;
+}
+
+#carouselExampleIndicators{
+	z-index: 0;
 }
 
 #comentarios{
@@ -123,7 +123,9 @@ cite {
 	font-weight: bold;
 	color: #3f3f3f;
 }
- /* MOVIL */
+
+
+ /* VERSION MOVIL */
 
 @media (max-width: 480px) {
 
@@ -147,5 +149,34 @@ blockquote:after {
 	bottom: 0rem;
 }
 
-   
+
 }
+/* FIN VERSION MOVIL */
+
+/* VERSION TABLET */
+
+@media (min-width: 481px) and (max-width: 1023px) {
+}
+/* FIN VERSION TABLET */
+
+/* VERSION DESKTOP */
+@media (min-width: 1024px) {
+
+	#menu{
+		height: 6rem;
+	}
+	// #promos{
+	// 	height: 91vh;
+	// }
+	// #carouselExampleIndicators{
+	// 	height: 91vh;
+	// }
+
+	// .carousel-inner{
+	// 	max-height: 91vh;
+	// }
+	
+	
+	
+}
+/* FIN VERSION DESKTOP */
