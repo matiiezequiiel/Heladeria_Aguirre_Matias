@@ -12035,7 +12035,7 @@ body {
 }
 
 blockquote {
-  font-family: 'Special Elite', cursive;
+  font-family: "Special Elite", cursive;
   background: #fffdf5;
   color: #3f3f5a;
   font-weight: 100;
@@ -12057,17 +12057,56 @@ blockquote:after {
 }
 
 blockquote:before {
-  content: '“';
+  content: "“";
   left: -5rem;
   top: -1rem;
   padding-top: 10px;
 }
 
 blockquote:after {
-  content: '”';
+  content: "”";
   right: -5rem;
   bottom: 1rem;
   padding-top: 10px;
+}
+
+blockquote:hover {
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
 }
 
 cite {
@@ -12110,7 +12149,7 @@ cite {
     top: -2rem;
   }
   blockquote:after {
-    content: '”';
+    content: "”";
     right: 0rem;
     bottom: 0rem;
   }
