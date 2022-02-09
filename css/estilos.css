@@ -11976,18 +11976,22 @@ body {
   z-index: 1;
 }
 
-#navbarSupportedContent {
-  z-index: 2;
-}
-
-#menu li > a {
+#cabecera #menu li > a {
   font-size: x-large;
   font-weight: bold;
 }
 
-#menu li > a:hover {
+#cabecera #menu li > a:hover {
   background-color: #da0669;
   border-radius: 10px;
+}
+
+#navbarSupportedContent {
+  z-index: 2;
+}
+
+#navbarSupportedContent {
+  z-index: 2;
 }
 
 .tituloMain {
@@ -12047,8 +12051,7 @@ blockquote {
   padding: 3rem 1rem 1rem 1rem;
 }
 
-blockquote:before,
-blockquote:after {
+blockquote:before, blockquote:after {
   position: absolute;
   color: #f1efe6;
   font-size: 8rem;

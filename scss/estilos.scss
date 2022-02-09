@@ -24,20 +24,42 @@ body {
   position: sticky;
   top: 0px;
   z-index: 1;
+  #menu li > a {
+    font-size: x-large;
+    font-weight: bold;
+    &:hover{
+      background-color: #da0669;
+      border-radius: 10px;
+    }
+  }
 }
 
 #navbarSupportedContent {
   z-index: 2;
 }
 
-#menu li > a {
-  font-size: x-large;
-  font-weight: bold;
-}
+// #cabecera {
+//   position: -webkit-sticky;
+//   position: sticky;
+//   top: 0px;
+//   z-index: 1;
+// }
 
-#menu li > a:hover {
-  background-color: #da0669;
-  border-radius: 10px;
+// #menu li > a {
+//   font-size: x-large;
+//   font-weight: bold;
+// }
+
+// #menu li > a:hover {
+//   background-color: #da0669;
+//   border-radius: 10px;
+// }
+
+// #navbarSupportedContent {
+//   z-index: 2;
+// }
+#navbarSupportedContent {
+  z-index: 2;
 }
 
 .tituloMain {
@@ -79,36 +101,34 @@ blockquote {
   position: relative;
   margin: 0;
   padding: 3rem 1rem 1rem 1rem;
+      &:before,
+      &:after {
+      position: absolute;
+      color: #f1efe6;
+      font-size: 8rem;
+      width: 4rem;
+      height: 4rem;
+    }
+    &:before {
+      content: "“";
+      left: -5rem;
+      top: -1rem;
+      padding-top: 10px;
+    }
+    &:after {
+      content: "”";
+      right: -5rem;
+      bottom: 1rem;
+      padding-top: 10px;
+    }
+    &:hover {
+      animation-name: pulse;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+    }
+    
 }
 
-blockquote:before,
-blockquote:after {
-  position: absolute;
-  color: #f1efe6;
-  font-size: 8rem;
-  width: 4rem;
-  height: 4rem;
-}
-
-blockquote:before {
-  content: "“";
-  left: -5rem;
-  top: -1rem;
-  padding-top: 10px;
-}
-
-blockquote:after {
-  content: "”";
-  right: -5rem;
-  bottom: 1rem;
-  padding-top: 10px;
-}
-
-blockquote:hover {
-  animation-name: pulse;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-}
 
 @-webkit-keyframes pulse {
   0% {
@@ -171,19 +191,20 @@ cite {
 
   blockquote {
     font-size: 1.5rem;
+      &:before {
+        left: -1rem;
+        top: -2rem;
+      }
+      &:after {
+        content: "”";
+        right: 0rem;
+        bottom: 0rem;
+      }
   }
 
-  blockquote:before {
-    left: -1rem;
-    top: -2rem;
   }
 
-  blockquote:after {
-    content: "”";
-    right: 0rem;
-    bottom: 0rem;
-  }
-}
+  
 /* FIN VERSION MOVIL */
 
 /* VERSION TABLET */
